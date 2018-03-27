@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  hub3c.mentify.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"

@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  hub3c.mentify.api:
+    image: hub3c.mentify.api
+    build:
+      context: ./src/Hub3c.Mentify.API
+      dockerfile: Dockerfile

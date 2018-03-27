@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  hub3c.mentify.api:
+    image: hub3c.mentify.api:dev
+    build:
+      args:
+        source: obj/Docker/empty/
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_hub3c.mentify.api$
+    volumes:
+      - E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.API:/app
+      - C:\Users\alvian\vsdbg\vs2017u5:/remote_debugger:ro
+#$nuget_volume_mapping_hub3c.mentify.api$
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_hub3c.mentify.api$ bin/Debug/netcoreapp2.0/Hub3c.Mentify.API.dll"
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/bash -c \"if PID=$$(pidof -x dotnet); then kill $$PID; fi\""

@@ -1,0 +1,1023 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hub3c.Mentify.API</name>
+    </assembly>
+    <members>
+        <member name="T:Hub3c.Mentify.API.Controllers.AdditionalActivitiesController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.AdditionalActivitiesController.#ctor(Hub3c.Mentify.Service.IAdditionalActivityService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.AdditionalActivitiesController.CreateOrUpdate(System.Int32,System.Collections.Generic.IEnumerable{Hub3c.Mentify.Service.Models.CreatedFieldOfStudy})">
+            <summary>
+            Update additional activities 
+            </summary>
+            <param name="systemUserId"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.AddressController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.AddressController.#ctor(Hub3c.Mentify.Service.IUserAddressService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.AddressController.CreateOrUpdate(System.Int32,Hub3c.Mentify.API.Models.AddressViewModel)">
+            <summary>
+            Update an address
+            </summary>
+            <param name="systemUserId"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.AdminInvitationsController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.AdminInvitationsController.#ctor(Hub3c.Mentify.Service.IAdminInvitationService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.AdminInvitationsController.Post(Hub3c.Mentify.Service.Models.AdminInvitationModel)">
+            <summary>
+            Send email invitation as an admin  
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.BiographyController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.BiographyController.#ctor(Hub3c.Mentify.Service.IUserProfileService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.BiographyController.Edit(Hub3c.Mentify.Service.Models.EditedBiography)">
+            <summary>
+            Edit biography 
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.BulletinsController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.BulletinsController.#ctor(Hub3c.Mentify.Service.IBulletinService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.BulletinsController.Private(System.Int32)">
+            <summary>
+            Get Personal Bulletin
+            </summary>
+            <param name="systemUserId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.BulletinsController.Network(System.Int32)">
+            <summary>
+            Get Network Bulletin 
+            </summary>
+            <param name="systemUserId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.BulletinsController.Comments(System.Int32)">
+            <summary>
+            Get Comments of  Bulletin 
+            </summary>
+            <param name="bulletinId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.ConnectionsController">
+            <inheritdoc />
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.ConnectionsController.#ctor(Microsoft.Extensions.Logging.ILogger{Hub3c.Mentify.API.Controllers.ConnectionsController},Hub3c.Mentify.Service.IConnectionService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.ConnectionsController.Post(Hub3c.Mentify.API.Models.CreatedConnectionViewModel)">
+            <summary>
+            Request, accept, reject, cancel, remove a connection
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.ConnectionsController.Status(System.Int32,System.Int32)">
+            <summary>
+            Get Connection Status
+            </summary>
+            <param name="fromSystemUserId"></param>
+            <param name="toSystemUserId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.DashboardController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.DashboardController.#ctor(Hub3c.Mentify.Service.IConnectionService,Hub3c.Mentify.Service.IDashboardService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.DashboardController.Get(System.Int32)">
+            <summary>
+            Get count of mentee or mentor of user
+            </summary>
+            <param name="systemUserId">system user Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.DashboardController.Admin(System.Int32)">
+            <summary>
+            Get count of mentee and mentor of admin
+            </summary>
+            <param name="systemUserId">system user Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.DashboardController.WhatsHappening(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Get What's Happening
+            </summary>
+            <param name="systemUserId">system user Id</param>
+            <param name="limit">page limit</param>
+            <param name="pageIndex">start from 0</param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.DocumentsController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.DocumentsController.#ctor(Hub3c.Mentify.Service.IDocumentService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.DocumentsController.Document(System.Int32)">
+            <summary>
+            Get User Photo
+            </summary>
+            <param name="id">System User Id</param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.EducationsController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.EducationsController.#ctor(Hub3c.Mentify.Service.IEducationService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.EducationsController.Delete(System.Int32,System.Int32)">
+            <summary>
+            Edit an education 
+            </summary>
+            <param name="systemUserId"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.EducationsController.Edit(System.Int32,Hub3c.Mentify.API.Models.EditedEducationViewModel)">
+            <summary>
+            Edit an education 
+            </summary>
+            <param name="systemUserId"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.EducationsController.Create(System.Int32,Hub3c.Mentify.API.Models.NewEducationViewModel)">
+            <summary>
+            Create an education 
+            </summary>
+            <param name="systemUserId"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.ExperiencesController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.ExperiencesController.#ctor(Hub3c.Mentify.Service.IExperienceService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.ExperiencesController.Delete(System.Int32,System.Int32)">
+            <summary>
+            Edit an experience 
+            </summary>
+            <param name="systemUserId"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.ExperiencesController.Edit(System.Int32,Hub3c.Mentify.API.Models.EditedExperienceViewModel)">
+            <summary>
+            Edit an experience 
+            </summary>
+            <param name="systemUserId"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.ExperiencesController.Create(System.Int32,Hub3c.Mentify.API.Models.NewExperienceViewModel)">
+            <summary>
+            Create an experience 
+            </summary>
+            <param name="systemUserId"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.GoalProgressesController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.GoalProgressesController.#ctor(Hub3c.Mentify.Service.IGoalProgressService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.GoalProgressesController.Post(System.Int32,Hub3c.Mentify.API.Models.NewGoalProgressViewModel)">
+            <summary>
+            Get Goals
+            </summary>
+            <param name="goalId">Goal Id</param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.GoalsController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.GoalsController.#ctor(Hub3c.Mentify.Service.IGoalService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.GoalsController.Get(System.Int32)">
+            <summary>
+            Get Goals
+            </summary>
+            <param name="systemUserId">system user Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.GoalsController.Post(Hub3c.Mentify.Service.Models.NewGoalModel)">
+            <summary>
+            Get Goals
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.GoalsController.Put(System.Int32,Hub3c.Mentify.API.Models.EditedGoalViewModel)">
+            <summary>
+            Edit a Goal
+            </summary>
+            <param name="goalId"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.GoalsController.Delete(System.Int32,System.Int32)">
+            <summary>
+            Delete a Goal
+            </summary>
+            <param name="goalId"></param>
+            <param name="systemUserId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.InformalExperiencesController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.InformalExperiencesController.#ctor(Hub3c.Mentify.Service.IInformalExperienceService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.InformalExperiencesController.CreateOrUpdate(System.Int32,System.Collections.Generic.IEnumerable{Hub3c.Mentify.Service.Models.InformalExperienceModel})">
+            <summary>
+            Update informal experiences 
+            </summary>
+            <param name="systemUserId"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.LookupController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.LookupController.#ctor(Hub3c.Mentify.Service.ILookupService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.LookupController.SubjectPreferences">
+            <summary>
+            Get Subject Preferences
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.LookupController.EduGrades">
+            <summary>
+            Get Edu Grades
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.LookupController.AdditionalActivity">
+            <summary>
+            Get Edu Additional Activities
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.LookupController.InformalExperience">
+            <summary>
+            Get Edu Informal Experiences
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.LookupController.ModeOfStudy">
+            <summary>
+            Get Mode Of Study
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.MenteesController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.MenteesController.#ctor(Hub3c.Mentify.Service.IConnectionService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.MenteesController.Get(System.Int32)">
+            <summary>
+            Get All Mentee
+            </summary>
+            <param name="systemUserId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.MentorsController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.MentorsController.#ctor(Hub3c.Mentify.Service.IConnectionService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.MentorsController.Get(System.Int32)">
+            <summary>
+            Get All mentors
+            </summary>
+            <param name="systemUserId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.MessageBoardsController">
+            <inheritdoc />
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.MessageBoardsController.#ctor(Hub3c.Mentify.Service.IMessageBoardService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.MessageBoardsController.Get(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Get Message Boards
+            </summary>
+            <param name="fromSystemUserId"></param>
+            <param name="toSystemUserId"></param>
+            <param name="limit"></param>
+            <param name="pageIndex">start from 0</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.MessageBoardsController.Post(Hub3c.Mentify.Service.Models.NewMessageBoardModel)">
+            <summary>
+            Create a Message Board
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.MessagesController">
+            <inheritdoc />
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.MessagesController.#ctor(Hub3c.Mentify.Service.IMessageService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.MessagesController.Inbox(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Inbox
+            </summary>
+            <param name="systemUserId"></param>
+            <param name="pageIndex">start from 0</param>
+            <param name="limit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.MessagesController.SetAsRead(System.Int32)">
+            <summary>
+            Set the message status as read
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.MessagesController.Post(Hub3c.Mentify.Service.Models.NewMessageModel)">
+            <summary>
+            Create a message
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.MessagesController.Delete(System.Int32)">
+            <summary>
+            Delete a message
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.MessagesController.Detail(System.Int32)">
+            <summary>
+            Get  message detail
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.MessagesController.Outbox(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Outbox
+            </summary>
+            <param name="systemUserId"></param>
+            /// <param name="pageIndex">start from 0</param>
+            <param name="limit"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.NetworksController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.NetworksController.#ctor(Hub3c.Mentify.Service.IConnectionService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.NetworksController.Requested(System.Int32)">
+            <summary>
+            Get list of user's request mentor or mentee
+            </summary>
+            <param name="systemUserId">System User ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.NetworksController.Connected(System.Int32)">
+            <summary>
+            Get list of user's connected mentor or mentee
+            </summary>
+            <param name="systemUserId">System User  Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.NetworksController.Pending(System.Int32)">
+            <summary>
+            Get list of user's pending mentor or mentee
+            </summary>
+            <param name="systemUserId">System User ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.NetworksController.Admin(System.Int32)">
+            <summary>
+            Get Admin of university
+            </summary>
+            <param name="systemUserId">System User Id</param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.NotificationsController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.NotificationsController.#ctor(Hub3c.Mentify.Service.INotificationService,Hub3c.Mentify.AccessInternalApi.IHub3cFirebaseApi)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.NotificationsController.ById(System.Int32)">
+            <summary>
+            Clear notification by id
+            </summary>
+            <param name="notificationId"> Notification ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.NotificationsController.ByType(Hub3c.Mentify.API.Models.EditedNotificationViewModel)">
+            <summary>
+             Clear notification by type
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.NotificationsController.UpdateAll(System.Int32)">
+            <summary>
+            Clear all notifications
+            </summary>
+            <param name="systemUserId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.PersonalGoalController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.PersonalGoalController.#ctor(Hub3c.Mentify.Service.IUserProfileService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.PersonalGoalController.Edit(Hub3c.Mentify.Service.Models.EditedPersonalGoal)">
+            <summary>
+            Edit personal goal 
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.PhotosController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.PhotosController.#ctor(Hub3c.Mentify.Service.IUserProfileService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.PhotosController.UserPhoto(System.Int32)">
+            <summary>
+            Get User Photo
+            </summary>
+            <param name="id">System User Id</param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.ProjectsController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.ProjectsController.#ctor(Hub3c.Mentify.Service.IProjectService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.ProjectsController.Get(System.Int32)">
+            <summary>
+            Get University Projects or Personal Project
+            </summary>
+            <param name="systemUserId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.ProjectTeamsController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.ProjectTeamsController.#ctor(Hub3c.Mentify.Service.IProjectTeamService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.ProjectTeamsController.Get(System.Int32)">
+            <summary>
+            Get Project Teams
+            </summary>
+            <param name="projectId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.SubjectExperiencesController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.SubjectExperiencesController.#ctor(Hub3c.Mentify.Service.ISubjectExperienceService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.SubjectExperiencesController.CreateOrUpdate(System.Int32,System.Collections.Generic.IEnumerable{Hub3c.Mentify.Service.Models.CreatedFieldOfStudy})">
+            <summary>
+            Update informal experiences 
+            </summary>
+            <param name="systemUserId"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.SubjectPreferencesController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.SubjectPreferencesController.#ctor(Hub3c.Mentify.Service.ISubjectPreferenceService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.SubjectPreferencesController.CreateOrUpdate(System.Int32,Hub3c.Mentify.API.Models.EduSubjectPreferenceViewModel)">
+            <summary>
+            Update subject preferences 
+            </summary>
+            <param name="systemUserId"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.TasksController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.TasksController.#ctor(Hub3c.Mentify.Service.ITaskService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.TasksController.Pending(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Get Pending Tasks
+            </summary>
+            <param name="fromSystemUserId"></param>
+            <param name="toSystemUserId"></param>
+             /// <param name="limit"></param>
+            <param name="pageIndex">start from 0</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.TasksController.Compeleted(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Get Completed Tasks
+            </summary>
+            <param name="fromSystemUserId"></param>
+            <param name="toSystemUserId"></param>
+            <param name="limit"></param>
+            <param name="pageIndex">start from 0</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.TasksController.Post(Hub3c.Mentify.Service.Models.NewTaskModel)">
+            <summary>
+            RequestConnection a Task
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.TasksController.Put(System.Int32,Hub3c.Mentify.API.Models.EditedTaskViewModel)">
+            <summary>
+            Edit a Task
+            </summary>
+            <param name="taskId"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.TasksController.Assign(System.Int32,Hub3c.Mentify.API.Models.AssigningTaskViewModel)">
+            <summary>
+            Assign a Task
+            </summary>
+            <param name="taskId"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.TasksController.Delete(System.Int32)">
+            <summary>
+            Delete a Task
+            </summary>
+            <param name="taskId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.TasksController.Status(System.Int32,Hub3c.Mentify.API.Models.TaskStatusViewModel)">
+            <summary>
+            Change  Task Status
+            </summary>
+            <param name="taskId"></param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.TasksController.MyTask(System.Int32,System.Boolean,System.Int32,System.Int32)">
+            <summary>
+            Get Assigned Tasks
+            </summary>
+            <param name="assignTo">System User Id</param>
+            <param name="isCompleted"></param>
+            <param name="limit"></param>
+            <param name="pageIndex">start from 0</param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.UserController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.UserController.#ctor(Hub3c.Mentify.Service.IUserProfileService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.UserController.Get">
+            <summary>
+            Get authenticated user profile
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.UserController.Get(System.Int32)">
+            <summary>
+            Get authenticated user profile
+            </summary>
+            <param name="systemUserId">System User ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.UserController.Setting(System.Int32)">
+            <summary>
+            Get user setting
+            </summary>
+            <param name="systemUserId">System User ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.UserController.MentifiType(System.Int32)">
+            <summary>
+            Get Mentifi Type
+            </summary>
+            <param name="businessId">Business ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.UserController.Edit(Hub3c.Mentify.Service.Models.EditedUserProfileModel)">
+            <summary>
+            Edit user profile
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Controllers.UserDevicesController">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.UserDevicesController.#ctor(Hub3c.Mentify.Service.ISystemUserDeviceService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.UserDevicesController.Post(Hub3c.Mentify.API.Models.SystemUserDeviceViewModel)">
+            <summary>
+            Add Current User Device 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Controllers.UserDevicesController.Delete(Hub3c.Mentify.API.Models.SystemUserDeviceViewModel)">
+            <summary>
+            Remove  User Device 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Filters.ErrorHandlingMiddleware">
+            <summary>
+            Middleware to handle exception from controller
+            </summary>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Filters.ErrorHandlingMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Filters.ErrorHandlingMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Handling exception from controller
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Filters.ValidateModelStateAttribute">
+            <inheritdoc />
+        </member>
+        <member name="M:Hub3c.Mentify.API.Filters.ValidateModelStateAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <inheritdoc />
+        </member>
+        <member name="T:Hub3c.Mentify.API.Models.CreatedConnectionViewModel">
+            <summary>
+            Created Connection Model
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.CreatedConnectionViewModel.SenderSystemUserId">
+            <summary>
+            System User ID of Sender
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.CreatedConnectionViewModel.ReceiverSystemUserId">
+            <summary>
+            System User ID of Receiver
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.CreatedConnectionViewModel.Message">
+            <summary>
+            Message for sending email
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.CreatedConnectionViewModel.ConnectionPostType">
+            <summary>
+            Request,Reject
+            </summary>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Models.EditedConnectionViewModel">
+            <inheritdoc />
+            <summary>
+              Model for Editing Connection
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.EditedConnectionViewModel.Status">
+            <summary>
+            Approved = 1,Removed = 2,Rejected = 3
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.NetworkUserViewModel.Occupation">
+            <summary>
+            Current work history
+            </summary>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Models.ProfileViewModel">
+            <summary>
+            Authenticated User Model
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.Email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.Mid">
+            <summary>
+            MID
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.SystemUserId">
+            <summary>
+            System User Id
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.BusinessId">
+            <summary>
+            Business ID
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.FirstName">
+            <summary>
+            First Name
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.LastName">
+            <summary>
+            Last Name
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.MiddleName">
+            <summary>
+            Middle Name
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.Workphone">
+            <summary>
+            Work Phone
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.MobilePhone">
+            <summary>
+            Mobile Phone
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.StudentNumber">
+            <summary>
+            Student Number
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.IsAboriginalOrTorresStraisIslander">
+            <summary>
+            I Identify as Aboriginal or Torres Strait Islander
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.IsInterNationalStudent">
+            <summary>
+            I am an International Student
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.CountryOfOrigin">
+            <summary>
+            Country of Origin
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.TimeInAustralia">
+            <summary>
+            Length of time in Australia
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.IsHavingDisabilityActionPlan">
+            <summary>
+            I have a disability action plan
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Hub3c.Mentify.API.Models.ProfileViewModel.CareerGoal" -->
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.SkillGoal">
+            <summary>
+            Professional Development Skills I Would Like to Develop with My Mentor
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.Hobby">
+            <summary>
+            My interests / hobbies are
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.BriefIntroduction">
+            <summary>
+            Brief Intro 
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.AddressLine1">
+            <summary>
+            Address line 1
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.AddressLine2">
+            <summary>
+            Address line 2
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.City">
+            <summary>
+            City
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.PlanDocumentId">
+            <summary>
+            Attachment
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.Longitude">
+            <summary>
+            Longitude
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.Latitude">
+            <summary>
+            Latitude
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.State">
+            <summary>
+            State
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.PostCode">
+            <summary>
+            Post Code
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.Country">
+            <summary>
+            Country
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.Educations">
+            <summary>
+            Educations
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.AdditionalActivities">
+            <summary>
+            Additional Activities
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.EduSubjectExperiences">
+            <summary>
+            Areas of specialisation
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.EduSubjectPreferences">
+            <summary>
+            I would like to mentor student studying
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.ProfileViewModel.MentorOrMenteeCount">
+            <summary>
+            Total mentor/ mentee of user
+            </summary>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Models.Employment">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.Employment.CompanyName">
+            <summary>
+            Company Name
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.Employment.IsCurrentlyWorkHere">
+            <summary>
+            Is Currently Work Here?
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.Employment.ExperienceInYear">
+            <summary>
+            Experience in year
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.Employment.ExperienceInMonth">
+            <summary>
+            Experience in month
+            </summary>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Models.InformalExperience">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Models.AdditionalActivity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Models.EduSubjectPreference">
+            <summary>
+            Edu Subject Preference
+            </summary>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Models.EduSubjectExperience">
+            <summary>
+            Areas of specialisation
+            </summary>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Models.EducationViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.EducationViewModel.FieldOfStudy">
+            <summary>
+            Field of Study
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.EducationViewModel.Grade">
+            <summary>
+            1 : Undergraduated
+            2 : Postgraduated
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.EducationViewModel.Degree">
+            <summary>
+            Degree
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.EducationViewModel.YearCompleted">
+            <summary>
+            1: Full time student
+            2: Part time student
+            </summary>
+        </member>
+        <member name="P:Hub3c.Mentify.API.Models.EducationViewModel.IsEduCurrentEducation">
+            <summary>
+            Is current education?
+            </summary>
+        </member>
+        <member name="T:Hub3c.Mentify.API.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Program.BuildWebHost(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Hub3c.Mentify.API.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,9 @@
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.Repository\bin\Debug\netcoreapp2.0\Hub3c.Mentify.Repository.deps.json
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.Repository\bin\Debug\netcoreapp2.0\Hub3c.Mentify.Repository.dll
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.Repository\bin\Debug\netcoreapp2.0\Hub3c.Mentify.Repository.pdb
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.Repository\obj\Debug\netcoreapp2.0\Hub3c.Mentify.Repository.csproj.CoreCompileInputs.cache
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.Repository\obj\Debug\netcoreapp2.0\Hub3c.Mentify.Repository.AssemblyInfoInputs.cache
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.Repository\obj\Debug\netcoreapp2.0\Hub3c.Mentify.Repository.AssemblyInfo.cs
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.Repository\obj\Debug\netcoreapp2.0\Hub3c.Mentify.Repository.dll
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.Repository\obj\Debug\netcoreapp2.0\Hub3c.Mentify.Repository.pdb
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.Repository\obj\Debug\netcoreapp2.0\Hub3c.Mentify.Repository.csprojResolveAssemblyReference.cache

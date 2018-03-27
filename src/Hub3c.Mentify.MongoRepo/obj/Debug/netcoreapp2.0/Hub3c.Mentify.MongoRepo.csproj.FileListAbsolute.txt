@@ -1,0 +1,9 @@
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.MongoRepo\bin\Debug\netcoreapp2.0\Hub3c.Mentify.MongoRepo.deps.json
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.MongoRepo\bin\Debug\netcoreapp2.0\Hub3c.Mentify.MongoRepo.dll
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.MongoRepo\bin\Debug\netcoreapp2.0\Hub3c.Mentify.MongoRepo.pdb
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.MongoRepo\obj\Debug\netcoreapp2.0\Hub3c.Mentify.MongoRepo.csproj.CoreCompileInputs.cache
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.MongoRepo\obj\Debug\netcoreapp2.0\Hub3c.Mentify.MongoRepo.AssemblyInfoInputs.cache
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.MongoRepo\obj\Debug\netcoreapp2.0\Hub3c.Mentify.MongoRepo.AssemblyInfo.cs
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.MongoRepo\obj\Debug\netcoreapp2.0\Hub3c.Mentify.MongoRepo.dll
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.MongoRepo\obj\Debug\netcoreapp2.0\Hub3c.Mentify.MongoRepo.pdb
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.MongoRepo\obj\Debug\netcoreapp2.0\Hub3c.Mentify.MongoRepo.csprojResolveAssemblyReference.cache

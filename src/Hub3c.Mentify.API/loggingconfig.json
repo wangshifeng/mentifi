@@ -1,0 +1,44 @@
+﻿{
+  "Serilog": {
+    "Using": [ "Serilog.Sinks.Console", "Serilog.Sinks.LogstashHttp" ],
+    "MinimumLevel": {
+      "Default": "Error"
+      //"Override": {
+      //  "System": "Error",
+      //  "Microsoft": "Error",
+      //  "Chargify": "Error",
+      //  "Hub3c": "Error"
+      //}
+    },
+    "WriteTo": [
+      {
+        "Name": "Console",
+        "Args": {
+          "outputTemplate": "{Timestamp:HH:mm:ss} [{Level:u3}] {SourceContext} - {Message:lj}{NewLine}{Exception}"
+        }
+      },
+      {
+        "Name": "LogstashHttp",
+        "Args": {
+          "logstashUri": "http://54.252.243.118:3001"
+        }
+      },
+      {
+        "Name": "DiagnosticTrace"
+      }
+    ],
+    "Enrich": [
+      { "Name": "FromLogContext" },
+      {
+        "Name": "WithProperty",
+        "Args": {
+          "name": "Hub3C-Mentify",
+          "value": "Hub3c.Mentify.API"
+        }
+      }
+    ]
+  }
+
+
+
+}

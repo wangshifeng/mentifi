@@ -1,0 +1,12 @@
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.AccessInternalApi\bin\Debug\netcoreapp2.0\Hub3c.Mentify.AccessInternalApi.deps.json
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.AccessInternalApi\bin\Debug\netcoreapp2.0\Hub3c.Mentify.AccessInternalApi.dll
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.AccessInternalApi\bin\Debug\netcoreapp2.0\Hub3c.Mentify.AccessInternalApi.pdb
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.AccessInternalApi\bin\Debug\netcoreapp2.0\Hub3c.Mentify.Core.dll
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.AccessInternalApi\bin\Debug\netcoreapp2.0\Hub3c.Mentify.Core.pdb
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.AccessInternalApi\obj\Debug\netcoreapp2.0\Hub3c.Mentify.AccessInternalApi.csproj.CoreCompileInputs.cache
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.AccessInternalApi\obj\Debug\netcoreapp2.0\Hub3c.Mentify.AccessInternalApi.AssemblyInfoInputs.cache
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.AccessInternalApi\obj\Debug\netcoreapp2.0\Hub3c.Mentify.AccessInternalApi.AssemblyInfo.cs
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.AccessInternalApi\obj\Debug\netcoreapp2.0\Hub3c.Mentify.AccessInternalApi.csproj.CopyComplete
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.AccessInternalApi\obj\Debug\netcoreapp2.0\Hub3c.Mentify.AccessInternalApi.dll
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.AccessInternalApi\obj\Debug\netcoreapp2.0\Hub3c.Mentify.AccessInternalApi.pdb
+E:\Geekseat\hub3c\hub3c-mentify\Hub3c.Mentify\src\Hub3c.Mentify.AccessInternalApi\obj\Debug\netcoreapp2.0\Hub3c.Mentify.AccessInternalApi.csprojResolveAssemblyReference.cache
